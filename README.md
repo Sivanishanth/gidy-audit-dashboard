@@ -54,7 +54,7 @@ npm run dev
 ## Live Demo
 
 Frontend:
-https://zesty-hamster-6cfc5e.netlify.app/
+https://gidy-security-audit-dashboard.netlify.app/
 
 
 ## GitHub Repository
