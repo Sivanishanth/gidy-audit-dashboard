@@ -74,29 +74,6 @@ npm run dev
 ```
 Create `.env` file:
 
-VITE_API_URL=http://localhost:5000
-
-
-## 📊 Technical Decisions
-
-### 1. MongoDB insertMany with ordered:false
-Bulk upload of 10,000 records uses `insertMany` with `ordered: false` — this continues inserting even if one record fails, maximizing performance for large datasets.
-
-### 2. Server-side Pagination
-All pagination uses MongoDB `skip` and `limit` — the frontend never loads all 10,000 records at once. This keeps response times under 100ms even with large datasets.
-
-### 3. MongoDB Indexes
-Added indexes on `severity`, `status`, `actor`, and `timestamp` fields for fast filtering and sorting on large collections.
-
-### 4. Promise.all for Parallel Queries
-Used `Promise.all([Log.find(...), Log.countDocuments(...)])` to run data fetch and count queries simultaneously — reduces response time by ~50%.
-
-### 5. express.json limit 50mb
-Set JSON body limit to 50mb to handle bulk upload payloads containing 10,000 log records in a single request.
-
-### 6. Regex Search
-Search uses MongoDB `$regex` with `$or` across multiple fields — actor, action, resource, IP address, role, region — giving flexible full-text-like search without a dedicated search engine.
-
 ## 📁 Project Structure
 
 gidy-audit-dashboard/
