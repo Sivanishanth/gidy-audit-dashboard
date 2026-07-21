@@ -4,7 +4,7 @@ import LogTable from "./components/LogTable";
 import Filters from "./components/Filters";
 import UploadButton from "./components/UploadButton";
 
-const API_URL = "http://localhost:5000"
+const API_URL = "https://gidy-audit-dashboard-koyh.onrender.com"
 
 export default function App() {
   const [logs, setLogs] = useState([]);
