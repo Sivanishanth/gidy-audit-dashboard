@@ -46,7 +46,7 @@ npm run dev
 ## Live Demo
 
 Frontend:
-https://zesty-hamster-6cfc5e.netlify.app/
+https://gidy-security-audit-dashboard.netlify.app/
 
 Backend:
 https://gidy-audit-dashboard-koyh.onrender.com/
