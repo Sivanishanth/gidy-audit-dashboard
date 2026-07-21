@@ -29,12 +29,20 @@ A full-stack Security Audit Dashboard built using React, Node.js, Express, and M
 
 ### Backend
 
+Create a `.env` file inside the **backend** folder and add:
+
+```env
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+```
+
+Then run:
+
 ```bash
 cd backend
 npm install
 node server.js
 ```
-
 ### Frontend
 
 ```bash
@@ -46,11 +54,9 @@ npm run dev
 ## Live Demo
 
 Frontend:
-https://gidy-security-audit-dashboard.netlify.app/
+https://zesty-hamster-6cfc5e.netlify.app/
 
-Backend:
-https://gidy-audit-dashboard-koyh.onrender.com/
 
 ## GitHub Repository
 
-https://github.com/Sivanishanth/gidy-audit-dashboard
+[View Source Code](https://github.com/Sivanishanth/gidy-audit-dashboard)
